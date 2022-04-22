@@ -1,0 +1,65 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/04/Rain_drops_on_a_glass.jpg");
+}
+
+
+
+.container{
+    border: 2px solid red;
+    border-radius: 25px;
+    height: 50%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(87, 87, 168);
+    box-shadow: 10px 10px 5px rgb(27, 26, 26);
+}
+
+
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    height: 20%;
+    width: 100%;
+    margin: 0;
+}
+
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid green; */
+    height: 100%;
+    width: 100%;
+}
+
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 17px 2px;
+    cursor: pointer;
+}
