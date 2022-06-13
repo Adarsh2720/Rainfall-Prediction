@@ -15,14 +15,18 @@
         </div>
         <div class="content">
             <div class="para">
+
                 Data:- 22/4/22  <br>
                 Location:- Mumbai <br><br>
-                <label > <span>MinTemp:- </span> <br><input type="text" name="minT"> </label><br>
-                <label > <span>MaxTemp:- </span><br><input type="text" name="maxT"></label><br>
-                <label > <span>Windspeed:- </span><br><input type="text" name="windS"></label><br>
-                <label > <span>Humidity:- </span><br><input type="text" name="humidity"></label><br>
+                <form action"/" method="post">
+                {% csrf_token %}
+                    <label > <span>MinTemp:- </span> <br><input type="text" name="minT"> </label><br>
+                    <label > <span>MaxTemp:- </span><br><input type="text" name="maxT"></label><br>
+                    <label > <span>Windspeed:- </span><br><input type="text" name="windS"></label><br>
+                    <label > <span>Humidity:- </span><br><input type="text" name="humidity"></label><br>
+                </form>
+                <button class="button" type="submit">Predict</button>
             </div>
-            <button class="button">Predict</button>
         </div>
     </div>
 </body>
